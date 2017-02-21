@@ -1,8 +1,6 @@
 class Command
   def self.execute
-    bst = Tree::BinarySearchTree.new([3,2,1])
-    bst.insert_via_recursion(4)
-    bst.insert_via_recursion(0)
-    Tree::Traversal.inorder(bst.root)
+    bst = Tree::BinarySearchTree.new([50,30,70,20,40,60,80,10,25])
+    print bst.successor(50).try(:datum)
   end
 end
